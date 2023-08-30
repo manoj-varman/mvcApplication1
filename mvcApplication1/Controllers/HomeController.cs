@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using mvcApplication1.Models;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace mvcApplication1.Controllers
@@ -14,7 +15,7 @@ namespace mvcApplication1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+     public IActionResult Index()
         {
           return View();
         }

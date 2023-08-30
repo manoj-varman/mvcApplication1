@@ -1,0 +1,28 @@
+﻿
+<div>
+    <a class="btn btn-primary" asp-controller="KYC" asp-action="Create">Add Employee</a>
+</div>
+
+<table class="table table-bordered table-responsive table-hover" >
+
+    <tr>
+        <th>empId </th>
+        <th>empName </th>
+        <th>empPhone </th>
+        <th>empRole</th>
+        <th>empCity</th>
+    </tr>
+       @foreach(var manoj in Model)
+    {
+    <tr>
+        <td>@manoj.empId</td>
+        <td>@manoj.empName</td>
+        <td>@manoj.empPhone</td>
+        <td>@manoj.empRole</td>
+        <td>@manoj.empCity</td>
+    </tr>
+
+
+       }
+
+</table>

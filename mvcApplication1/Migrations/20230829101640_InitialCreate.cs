@@ -14,8 +14,8 @@ namespace mvcApplication1.Migrations
                 name: "KYC",
                 columns: table => new
                 {
-                    empId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    empId = table.Column<int>(type: "int", nullable: false),
+                        
                     empName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     empPhone = table.Column<int>(type: "int", nullable: false),
                     empRole = table.Column<string>(type: "nvarchar(max)", nullable: false),

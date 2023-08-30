@@ -1,8 +1,28 @@
-﻿
+﻿@model KYC
+<div>
+    <a class="btn btn-primary" asp-controller="KYC" asp-action="Create">Add Employee</a>
+</div>
 
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<table class="table table-bordered table-responsive table-hover">
 
+    <tr>
+        <th>empId </th>
+        <th>empName </th>
+        <th>empPhone </th>
+        <th>empRole</th>
+        <th>empCity</th>
+    </tr>
+@*    @foreach(var manoj in Model)
+    { *@
+        <tr>
+            <td>@Model.empId</td>
+            <td>@Model.empName</td>
+            <td>@Model.empPhone</td>
+            <td>@Model.empRole</td>
+            <td>@Model.empCity</td>
+        </tr>
+        
 
+ @*    } *@
 
-
+</table> 

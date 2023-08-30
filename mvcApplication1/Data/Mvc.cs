@@ -5,10 +5,10 @@ namespace mvcApplication1.Data
 {
     public class Mvc : DbContext
     {
-        public Mvc(DbContextOptions<Mvc>options) : base(options)
+        public Mvc(DbContextOptions<Mvc> options) : base(options)
         {
         }    
-        public DbSet <KYC> KYC { get; set; }
+        public DbSet<KYC> KYC { get; set; }
         }
     }
 
